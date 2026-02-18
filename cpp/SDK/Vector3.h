@@ -60,7 +60,8 @@ struct Vector3 {
     static inline Vector3 Project(Vector3 a, Vector3 b) {
         float m = Magnitude(b);
         if (m == 0) return Vector3::zero();
-        return Dot(a, b) / (m * m) * b;
+        float scalar = Dot(a, b) / (m * m);
+        return Vector3(b.x * scalar, b.y * scalar, b.z * scalar);
     }
 
     inline Vector3 operator+(const Vector3 rhs) const { 
