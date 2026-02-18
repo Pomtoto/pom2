@@ -12,44 +12,44 @@ enum EThemeTarget {
 };
 
 namespace Configs {
-    int EglWidth = 0;
-    int EglHeight = 0;
-    int DisplayWidth = 0;
-    int DisplayHeight = 0;
-    bool LoginValid = false;
-    bool Initialized = false;
-    bool ClearMouse = true;
-    bool ShowImGui = true;
+    extern int EglWidth;
+    extern int EglHeight;
+    extern int DisplayWidth;
+    extern int DisplayHeight;
+    extern bool LoginValid;
+    extern bool Initialized;
+    extern bool ClearMouse;
+    extern bool ShowImGui;
 };
 
 namespace Esp {
-    bool SkillsId = false;
+    extern bool SkillsId;
 }
 
 namespace AutoSkills {
-    bool SoYou = false;
-    bool Lucas = false;
-    bool KimmyTrigger = false;
-    bool GusionTrigger = false;
-    bool JoyTrigger = false;
-    bool PaquitoTrigger = false;
+    extern bool SoYou;
+    extern bool Lucas;
+    extern bool KimmyTrigger;
+    extern bool GusionTrigger;
+    extern bool JoyTrigger;
+    extern bool PaquitoTrigger;
 };
 
 struct sAutoRetribution {
-    bool RedandBlue = false;
-    bool TurtleandLord = false;
-    bool Crab = false;
-    bool litho = false;
-    float Custom = 7.0f;
+    bool RedandBlue;
+    bool TurtleandLord;
+    bool Crab;
+    bool litho;
+    float Custom;
 };
 
 struct sAim {
-    bool SelfPos = false;
-    bool TargetPriority = false;
-    bool AutoTakeSword = false;
-    bool AutoTakeSword2 = false;
-    bool ActivePredict = false;
-    float RangeFOV = 10.0f;
+    bool SelfPos;
+    bool TargetPriority;
+    bool AutoTakeSword;
+    bool AutoTakeSword2;
+    bool ActivePredict;
+    float RangeFOV;
     Vector3 Dir;
     Vector3 Pos;
     Vector3 NearestEnemyPos;
@@ -59,16 +59,16 @@ struct sAim {
 };
 
 struct sESP {
-    bool FPS = false;
-    bool Line = false;
-    bool Box = false;
-    bool Health = false;
-    bool Name = false;
-    bool Distance = false;
-    bool Hero = false;
-    bool Visible = false;
-    bool Antilag = false;
-    bool ShowMonster = false;
+    bool FPS;
+    bool Line;
+    bool Box;
+    bool Health;
+    bool Name;
+    bool Distance;
+    bool Hero;
+    bool Visible;
+    bool Antilag;
+    bool ShowMonster;
 };
 
 extern sAutoRetribution AutoRetribution;
